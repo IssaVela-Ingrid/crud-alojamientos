@@ -1,0 +1,40 @@
+========================
+Entorno & Dependencias
+========================
+Dependencias de Composer
+/vendor/
+
+Archivos de caché o generados por Composer
+composer.lock
+
+Archivos de caché de Composer (opcional, si usas la caché)
+.composer-cache/
+
+========================
+Archivos de Sistema Operativo
+========================
+.DS_Store
+Thumbs.db
+
+========================
+Configuraciones Locales
+========================
+El archivo de configuración local contiene credenciales de DB (DB_HOST, etc.).
+Es CRUCIAL que este archivo NUNCA se suba al repositorio.
+config.php
+
+Si usas una copia de ejemplo, puedes ignorar el real y mantener el de ejemplo:
+config.local.php
+========================
+Archivos de Sesión
+========================
+Si PHP guarda sesiones en archivos (aunque a veces se usa la configuración por defecto del sistema)
+/tmp/
+/sessions/
+
+========================
+Logs y Archivos Temporales
+========================
+Logs de errores, etc.
+*.log
+*.tmp
