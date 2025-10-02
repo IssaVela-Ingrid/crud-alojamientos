@@ -19,7 +19,7 @@ $user_rol = $_SESSION['rol'] ?? 'usuario';
     <header>
         <nav class="navbar">
             <div class="container">
-                <a href="index.php?page=home">🏡 Alojamientos</a>
+                <a href="index.php?page=home"><b>🍀🏡 IssaVela_Ingrid Alojamientos</b></a>
                 <div class="right-links">
                     <?php if ($isLoggedIn): ?>
                         <?php if ($user_rol === 'administrador'): ?>
@@ -29,7 +29,7 @@ $user_rol = $_SESSION['rol'] ?? 'usuario';
                         <span>Hola, <?= htmlspecialchars($user_name) ?></span>
                         <a href="index.php?page=auth&action=logout" class="btn btn-danger">Salir</a>
                     <?php else: ?>
-                        <a href="index.php?page=auth&action=login">Iniciar Sesión</a>
+                        <a href="index.php?page=auth&action=login"><b>Iniciar Sesión</b></a>
                         <a href="index.php?page=auth&action=register" class="btn btn-primary">Crear Cuenta</a>
                     <?php endif; ?>
                 </div>

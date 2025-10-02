@@ -3,11 +3,11 @@
 ob_start();
 ?>
 
-<h1>Alojamientos en Oferta</h1>
+<h1>🛍️Alojamientos en Oferta</h1>
 <p>Explora la selección de nuestros mejores alojamientos. ¡Inicia sesión para guardar tus favoritos!</p>
 
 <?php if (isset($_SESSION['message'])): ?>
-    <div style="background-color: #d4edda; color: #155724; padding: 10px; border-radius: 5px; margin-bottom: 20px;">
+    <div style="background-color: #d4edda; color: #048522ff; padding: 10px; border-radius: 5px; margin-bottom: 20px;">
         <?= htmlspecialchars($_SESSION['message']); unset($_SESSION['message']); ?>
     </div>
 <?php endif; ?>

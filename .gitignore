@@ -21,7 +21,7 @@ Configuraciones Locales
 ========================
 El archivo de configuración local contiene credenciales de DB (DB_HOST, etc.).
 Es CRUCIAL que este archivo NUNCA se suba al repositorio.
-config.php
+//config.php
 
 Si usas una copia de ejemplo, puedes ignorar el real y mantener el de ejemplo:
 config.local.php
@@ -38,3 +38,7 @@ Logs y Archivos Temporales
 Logs de errores, etc.
 *.log
 *.tmp
+========================
+Archivos de base de datos local que no deben versionarse
+========================
+script-db_alojamientos_crud.sql

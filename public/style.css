@@ -1,10 +1,11 @@
 /* public/style.css */
 
 :root {
-    --primary-color: #007bff;
+    /* Nuevos colores definidos por Issa: */
+    --primary-color: #0f5514; /* Verde más oscuro, casi negro */
     --secondary-color: #6c757d;
     --light-color: #f8f9fa;
-    --dark-color: #343a40;
+    --dark-color: #000b16; /* Negro/Gris muy oscuro para elementos principales */
     --danger-color: #dc3545;
 }
 
@@ -14,6 +15,14 @@ body {
     padding: 0;
     background-color: var(--light-color);
     color: var(--dark-color);
+    min-height: 100vh; /* Asegura que el cuerpo ocupe toda la altura */
+    display: flex;
+    flex-direction: column;
+}
+
+.content-wrapper {
+    flex: 1; /* Permite que el contenido ocupe el espacio restante */
+    padding-bottom: 50px; /* Espacio para el footer flotante */
 }
 
 .container {
@@ -92,12 +101,13 @@ body {
 }
 
 .btn-primary {
-    background-color: var(--primary-color);
+    background-color: var(--primary-color); /* Usa el nuevo verde oscuro */
     color: white;
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
+    /* Ajuste de hover para el nuevo verde oscuro */
+    background-color: #021a03; 
 }
 
 .btn-danger {
@@ -126,12 +136,23 @@ body {
 
 .alojamiento-card h3 {
     margin-top: 0;
-    color: var(--primary-color);
+    color: var(--primary-color); /* Usa el nuevo verde oscuro */
 }
 
 .alojamiento-card .price {
     font-size: 1.2em;
     font-weight: bold;
-    color: #28a745;
+    color: var(--primary-color); /* Usa el nuevo verde oscuro */
     margin-bottom: 10px;
+}
+
+/* --- Footer --- */
+.footer {
+    background-color: var(--dark-color); /* Fondo negro/gris oscuro */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto; /* Empuja el footer hacia la parte inferior */
+    width: 100%;
+    border-top: 2px solid var(--primary-color); /* Usa el nuevo verde oscuro como separador */
 }

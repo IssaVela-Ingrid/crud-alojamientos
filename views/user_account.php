@@ -4,17 +4,17 @@ ob_start();
 ?>
 
 <h2>👤 Mi Cuenta: <?= htmlspecialchars($_SESSION['nombre']) ?></h2>
-<h3>Alojamientos que has Seleccionado (Puntos 3 y 4)</h3>
+<h3>✅Alojamientos que has Seleccionado (Puntos 3 y 4)</h3>
 
 <?php if (isset($_SESSION['message'])): ?>
-    <div style="background-color: #d4edda; color: #155724; padding: 10px; border-radius: 5px; margin-bottom: 20px;">
+    <div style="background-color: #d4edda; color: #025e17ff; padding: 10px; border-radius: 5px; margin-bottom: 20px;">
         <?= htmlspecialchars($_SESSION['message']); unset($_SESSION['message']); ?>
     </div>
 <?php endif; ?>
 
 <div class="alojamiento-grid">
     <?php if (empty($alojamientos)): ?>
-        <p>Aún no has seleccionado ningún alojamiento. <a href="index.php?page=home">Explora los disponibles aquí</a>.</p>
+        <p>❌Aún no has seleccionado ningún alojamiento. <a href="index.php?page=home">Explora los disponibles aquí</a>.</p>
     <?php else: ?>
         <?php foreach ($alojamientos as $alojamiento): ?>
             <div class="alojamiento-card">
